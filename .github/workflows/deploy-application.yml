@@ -12,9 +12,9 @@ jobs:
   build-deploy:
     name: build deploy
     runs-on: ubuntu-lastest
+    needs: display-location
     steps:
       - uses: actions/checkout@v4
-
       - name: build with nodejs
         uses: actions/setup-node@v3
         with:
