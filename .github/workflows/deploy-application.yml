@@ -1,0 +1,10 @@
+on:
+  push:
+
+jobs:
+  display-location:
+    name: display location
+    runs-on: ubuntu-lastest
+    steps:
+      - name: display
+        run: pwd
