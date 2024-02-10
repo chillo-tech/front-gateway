@@ -37,6 +37,6 @@ jobs:
         with:
           host: ${{ secrets.SERVER }}
           username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PRIVATE_KEY }}
+          password: ${{ secrets.SERVER_PRIVATE_KEY }}
           source: 'dist/*'
           target: '/var/www/html/'
